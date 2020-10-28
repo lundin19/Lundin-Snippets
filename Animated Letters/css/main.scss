@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: rgb(207, 98, 98);
+}
+
+.text-ani { /* Boxen hvor text bliver centreret i */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 60%;
+    height: 100vh;
+    text-transform: uppercase;
+  }
+
+.h1-text { /* Wrapperen til vores span */
+    font-weight: 700;
+    font-size: 3.5em;
+    color: white;
+  
+  
+  .text-wrapper { /* Her laver vi animationen */
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .line { /* Linjen der følger bogstaverne */
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #fff;
+    transform-origin: 0 50%;
+  }
+  
+  .line1 { 
+    top: 0; 
+    left: 0;
+  }
+  
+  .letter { /* Bogstaverne */
+    display: inline-block;
+    line-height: 1em;
+  }
+}
