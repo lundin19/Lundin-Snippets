@@ -1,0 +1,72 @@
+/*  Variabler */
+body {
+  background-color: #f3f3f3;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Cookie container og Box-shadow */
+.cookieConsentContainer {
+  width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #c4c3c3;
+  padding: 30px 30px 30px 30px;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 0px 300px 200px rgba(189, 188, 188, 0.3);
+  box-shadow: 0px 0px 300px 200px rgba(189, 188, 188, 0.3);
+  /*  Cookie text design */
+  /*  Cookie button */
+}
+
+.cookieConsentContainer > .cookieTitle
+> a {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.cookieConsentContainer .cookieDesc {
+  font-size: 20px;
+}
+
+.cookieConsentContainer .cookieDesc > p {
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.cookieConsentContainer .cookieDesc > a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.cookieConsentContainer .cookieButton {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10%;
+  font-size: 20px;
+}
+
+.cookieConsentContainer .cookieButton > a {
+  color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 14px 24px;
+  background: #a1a0a0;
+  text-align: center;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.cookieConsentContainer .cookieButton > a:hover {
+  cursor: pointer;
+  background: #c4c3c3;
+}
+/*# sourceMappingURL=main.css.map */
