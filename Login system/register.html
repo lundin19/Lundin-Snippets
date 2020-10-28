@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/Login system/css/login.css">
+</head>
+<body>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn">Login</button>
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="btn">Register</button>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post" id="form">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn1">Login</button>
+            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="btn2">Register</button>
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+      
+          <div class="container">
+              <h2>Login</h2>
+      
+            <input type="text" placeholder="Indtast Brugernavn" name="uname" id="navn" required>
+      
+            <input type="password" placeholder="Indtast Password" name="psw" id="password" required>
+              
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <button type="submit" class="login-btn" id="button-submit">Login</button>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Glemt <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+    <div id="id02" class="modal2">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post" id="form">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn1">Login</button>
+        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="btn2">Register</button>
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+    
+        <div class="container2">
+            <h2>Register</h2>
+    
+          <input type="text" placeholder="Indtast Brugernavn" name="uname" id="navn" required>
+
+          <input type="text" placeholder="Indtast E-mail" name="email" id="email">
+          <div id="emailError">*Email skal indholde @ og punktum*</div>
+    
+          <input type="password" placeholder="Indtast Password" name="psw" id="password" required>
+            
+          <label>
+            <input type="checkbox" checked="checked" name="Policy"> Jeg accepter privatlivspolitik
+          </label>
+          <button type="submit" class="login-btn2" id="button-submit">Login</button>
+        </div>
+    
+        <div class="container2" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+          <span class="psw">Glemt <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+<script src="/Login system/js/app.js"></script>
+<script src="/Login system/js/app2.js"></script>
+<script src="/Login system/js/validation.js"></script>
+<script src="/Login system/js/validation2.js"></script>
+</body>
+</html>
